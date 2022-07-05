@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useState } from 'react';
+import { CartContext, CartProvider } from './Context/post';
+import {ModalAdd} from './modalAdd'
+import { PostNotas } from './PostNotas';
+
+
+
+interface itemProps{
+  id:any,
+  title: string,
+  description: string
+}
+
+
 
 function App() {
+
+  
+  const [modal, setModal] = useState(false)
+
+  function handleOpenModal(){
+    setModal(true)
+  }
+  function handleCloseModal(){
+    setModal(false)
+  }
+
+
+ 
   return (
+    <CartProvider>
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+      <h1>Bloco de Notas</h1>
+      <button className='button-open-modal' onClick={handleOpenModal}>Adicionar Nota</button>
+      <ModalAdd isOpen={modal} onRequestClose={handleCloseModal}/>
+    
+    <div className='area-post'>
+
+    <PostNotas/>
     </div>
-  );
+    
+
+    </div>
+
+    
+    </CartProvider>
+     
+    
+     
+     );
 }
 
 export default App;
