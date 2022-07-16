@@ -21,6 +21,12 @@ body{
   color:white ;
 }
 
+header{
+  background-color:#1B1B1E ;
+  display:flex ;
+  height:4rem ;
+}
+
 button.button-open-modal{
   background-color:#00E052 ;
   padding:8px ;

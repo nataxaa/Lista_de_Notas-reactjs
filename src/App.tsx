@@ -31,17 +31,16 @@ function App() {
     <CartProvider>
 
     <div className="App">
-    
+    <header>
       <h1>Bloco de Notas</h1>
       <button className='button-open-modal' onClick={handleOpenModal}>Adicionar Nota</button>
       <ModalAdd isOpen={modal} onRequestClose={handleCloseModal}/>
+    </header>
     
     <div className='area-post'>
-
     <PostNotas/>
     </div>
     
-
     </div>
 
     
