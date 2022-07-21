@@ -11,9 +11,9 @@ grid-template-columns:1fr 1fr 1fr ;
 
 gap:1rem;
 
-div.post{
+div.today{
    
-    background-color:#00E052 ;
+    background-color:#E52E4D ;
     width:26rem;
     height:10rem ;
     border-radius:10px ;
@@ -21,6 +21,28 @@ div.post{
     flex-direction:column ;
     padding-top:10px ;
     padding-bottom:10px ;
+}
+div.tomorrow{
+   
+   background-color:#33CC95 ;
+   width:26rem;
+   height:10rem ;
+   border-radius:10px ;
+   display:flex ;
+   flex-direction:column ;
+   padding-top:10px ;
+   padding-bottom:10px ;
+}
+div.nextday{
+   
+   background-color:#12AFCE ;
+   width:26rem;
+   height:10rem ;
+   border-radius:10px ;
+   display:flex ;
+   flex-direction:column ;
+   padding-top:10px ;
+   padding-bottom:10px ;
 }
 button.button-remove{
     position:relative ;
@@ -35,7 +57,7 @@ button.button-remove{
 
 div.descri{
     
-    background-color:#00B850 ;
+    background-color:#1B1B1E ;
    width:20rem ;
     height:7rem ;
     border-radius:10px ;

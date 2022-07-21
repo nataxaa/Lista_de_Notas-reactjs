@@ -6,18 +6,19 @@ import { Post } from "./style"
 interface itemProps{
     id:any,
     title:string,
-    description:string
+    description:string,
+    type:string
 }
-
 
 
 export function PostNotas(){
     const  {post, RemovePost}:any= useContext(CartContext)
+    console.log(post)
 
     return(
         <Post>
             {post.map((posts:itemProps)=>(
-                <div className="post">
+                <div className={posts.type}>
                     <span className="title">{posts.title}</span>
                     <div className="descri">
                         <span >{posts.description}</span>

@@ -45,4 +45,32 @@ export const Container = styled.div`
         outline:none ;
     }
 
+    div.button-style{
+        display:flex ;
+        gap:1rem;
+    }
+
+`
+interface RadioBoxProps {
+    isActive: boolean;
+    activeColor: 'blue' | 'red' |'green' ;
+  }
+
+  const colors = {
+    green: '#33CC95',
+    red: '#E52E4D',
+    blue: '#12AFCE'
+  }
+
+
+export const ButtonColor = styled.button<RadioBoxProps>`
+
+cursor:pointer;
+
+background: ${(props) => props.isActive 
+    ? colors[props.activeColor]
+    : '#EFF1C5'};
+
+
+
 `
