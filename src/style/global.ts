@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 *{
   margin: 0 auto ;
   align-items:center ;
-  text-align:center ;
+  
 }
 
 body{
@@ -69,6 +69,38 @@ div .area-post{
   border-radius:10px ;
 }
 
+div.table-importante{
+  position: relative ;
+  left: -30rem ;
+  margin: auto;
+      width:fit-content ;
+      margin-top:1rem ;
+      
+      
+
+ 
+  h3{
+    padding-left:2.2rem ;
+  }
+ text-align:left ;
+  ul{
+    list-style-type:none ;
+   
+  }
+  li{
+    margin-top: 7px;
+      padding-bottom: 3px;
+  }
+}
+.red{
+    color: #E52E4D;
+}
+.green{
+  color: #33CC95;
+}
+.blue{
+  color: #12AFCE ;
+}
 
 `
 
